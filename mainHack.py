@@ -1,18 +1,3 @@
-def get_data(file):
-    with open(file, "r") as file:
-        number_of_len_word = int(file.readline().strip())
-        number_of_words_to_decode = int(file.readline().strip())
-        number_of_statistical_error = int(file.readline().strip())
-        encrypted_text = list(file.read())
-
-    return (
-        number_of_len_word,
-        number_of_words_to_decode,
-        number_of_statistical_error,
-        encrypted_text,
-    )
-
-
 def Xor(arr):
     result = 0
     i = 0
@@ -25,7 +10,6 @@ def Xor(arr):
             j = i + 1
         else:
             return "Invalid input"
-
     return result
 
 
@@ -37,5 +21,20 @@ def Not(x):
             return 1
 
 
-# print(get_data("messeges7.in")[2])
-print(Xor([1, 1, 1, 0]))
+def decode(len_of_original_word, number_of_words_to_decode, number_of_error, encrypted_word):
+    len_of_original_word += 1
+    decoded_message = []
+    i = 0
+    
+    
+    
+
+print(Xor([1, 1, 1, 0, 1, 1, 0]))
+
+print(len("01100110100100"))
+
+with open("file", "r") as file:
+        N = len_of_original_word = int(file.readline().strip())
+        n = number_of_words_to_decode = int(file.readline().strip())
+        e = number_of_error = int(file.readline().strip())
+        encrypted_text = list(file.read())

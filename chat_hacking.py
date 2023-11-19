@@ -27,7 +27,7 @@ def decode_message(N, n, max_changes, messages):
     return decoded_messages
 
 if __name__ == "__main__":
-    with open("input.txt", "r") as file:
+    with open("messeges7.in", "r") as file:
         N = int(file.readline().strip())
         n = int(file.readline().strip())
         max_changes = int(file.readline().strip())
